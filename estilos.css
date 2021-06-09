@@ -1,0 +1,99 @@
+body{
+    background-color: rgba(221, 221, 221, 0.829);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.container-fluid{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.container-fluid h2{
+    color: rgb(13, 102, 235);
+    position: relative;
+    width: 23rem;
+}
+.container-fluid h2::after{
+    content: "";
+    position: relative;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: hotpink;
+}
+.acordion{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #6db5ff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+.acordion  .icon{
+    margin:  0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: #6db5ff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    float: left;
+    transition: all;
+}
+.acordion h5{
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #1f5c9a;
+}
+.active  .icon{
+    background: 8px -25px #fff;
+}
+.active{
+    background-color: #6db5ff;
+    color: #fff;
+}
+.active h5{
+    color: #fff;
+}
+.panel{
+    padding: 0 15px;
+    border-left: 1px solid #6db5ff;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+
+}
+/*Paginacion*/
+.Paginacion{
+    margin: 20px 0;
+}
+.Paginacion ul{
+    list-style: none;
+    text-align: center;
+}
+.Paginacion ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.Paginacion ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #024959;
+    text-decoration: none;
+}
+.Paginacion ul li a:hover {
+background-color: #037E8C;
+}
+.Paginacion ul li .active{
+    background-color: #037E8C;
+    font-weight: bold;
+}
